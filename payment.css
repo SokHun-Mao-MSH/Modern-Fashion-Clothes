@@ -1,0 +1,47 @@
+/* payment.css */
+body {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.container-fluid {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.qrcode {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.qrkhmer img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+  section {
+      width: 90%;
+  }
+}
+
+@media (min-width: 769px) {
+  section {
+      width: 50%;
+  }
+}

@@ -1,0 +1,287 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header ul li {
+    position: relative;
+}
+
+.header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.header ul li a:hover, .header ul li a.active {
+    color: #f39c12;
+}
+
+.header ul li ul.menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px 0;
+    top: 40px;
+    left: 0;
+    min-width: 160px;
+    z-index: 1000;
+}
+
+.header ul li:hover ul.menu {
+    display: block;
+}
+
+.header ul li ul.menu li {
+    display: block;
+    padding: 10px 20px;
+}
+
+
+/* Body Section */
+.Body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+h2 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .form-control {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin-top: 10px;
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 30%;
+    padding: 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li span {
+    font-weight: bold;
+}
+
+.footer-section a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header ul {
+        flex-direction: column;
+    }
+
+    .header ul li {
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .header ul li ul.menu {
+        position: static;
+        box-shadow: none;
+    }
+
+    .Body {
+        flex-direction: column;
+    }
+
+    .Bunner-woman, .Bunner-man {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header ul li a {
+        font-size: 16px;
+    }
+
+    .Bunner-woman h1, .Bunner-man h2 {
+        font-size: 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+}
